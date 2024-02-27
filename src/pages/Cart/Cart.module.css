@@ -1,0 +1,357 @@
+.productImg {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.title {
+    width: 20%;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productItem {
+    border: 1px solid #ccc;
+}
+
+.cartContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px 0;
+}
+
+.cartImg, .btnRemove {
+    width: 7%;
+}
+
+.title {
+    width: 25%;
+}
+
+.price, .controls, .cartTotal {
+    width: 16%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    /* width: 100px; */
+    /* height: 40px; */
+    /* border: 1px solid #ccc; */
+}
+
+
+.btnRemove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #EB3349;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.cartTotal {
+
+}
+
+.totalBill {
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(235, 51, 73), rgb(244, 92, 67));
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.totalBill p {
+    margin-bottom: 0;
+    /* align-items: center; */
+    /* display: block; */
+    text-align: center;
+    /* justify-content: center; */
+}
+
+
+button {
+    border: none;
+}
+
+.controls button {
+    padding: 1px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.controls input {
+    width: 30%;
+    text-align: center;
+    border:  1px solid #ccc;
+    /* border: none; */
+    /* background: #12D8FA; */
+}
+
+.totalEmpty {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.totalEmpty p {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.totalEmpty .btnBack {
+    padding: 15px 30px;
+    background: #FF8008;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.totalEmpty .btnBack:hover {
+    opacity: 0.8;
+}
+
+.mark {
+    /* width: 40px;
+    height: 40px; */
+}
+
+.billContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.billButton {
+    color: #fff;
+    background: #12D8FA;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.billButton:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 300px) {
+    .cartContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .btnRemove {
+        margin: 0 auto;
+        width: 60%;
+        /* width: 100%; */
+    }
+
+    .cartImg {
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .title {
+        /* margin: 0 auto; */
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .price {
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+
+    .controls,
+    .cartTotal {
+        width: calc(50% - 10px);
+    }                                                               
+
+    .billContainer {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    .billAction {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    .cartContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .productImg {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .btnRemove {
+        margin: 0 auto;
+        width: 60%;
+        /* width: 100%; */
+    }
+
+    .cartImg {
+        width: calc(30% - 10px);
+    }
+
+    .title {
+        width: calc(70% - 10px);
+        font-size: 1.5rem;
+    }
+
+    .price,
+    .controls,
+    .cartTotal {
+        width: calc(33% - 14px);
+        font-size: 1.5rem;
+    }
+
+    .controls {
+        font-size: 1.4rem;
+    }
+
+    .totalBill {
+        padding: 12px 0;
+    }
+
+    .totalBill p {
+        font-size: 1.5rem;
+    }
+
+    .billContainer {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    .billAction {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .cartContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btnRemove {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .cartImg {
+        width: calc(30% - 10px);
+    }
+
+    .title {
+        width: calc(70% - 10px);
+    }
+
+    .price,
+    .controls,
+    .cartTotal {
+        width: calc(33% - 12px);
+    }
+
+    .billContainer {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    .billAction {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .cartContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btnRemove {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .cartImg {
+        width: calc(30% - 10px);
+    }
+
+    .title {
+        width: calc(70% - 10px);
+    }
+
+    .price,
+    .controls,
+    .cartTotal {
+        width: calc(33% - 12px);
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    .cartContainer {
+        width: 95%;
+    }
+    .productImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cartImg {
+        width: 8%;
+    }
+
+    .btnRemove {
+        width: 12%;
+    }
+
+    .title {
+        width: 20%;
+    }
+
+    .price,
+    .controls {
+        width: 16%;
+    }
+
+    .cartTotal {
+        width: 12%;
+    }
+}

@@ -1,0 +1,119 @@
+.form {
+    /* padding: 20px; */
+    /* background: #000; */
+}
+
+.input {
+    border: none;
+    padding: 5px 10px;
+    height: 35px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
+    min-width: 300px;
+}
+
+.btnSearch {
+    height: 35px;
+    padding: 5px 12px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #fff;
+    background: #F45C43;
+}
+
+
+@media screen and (max-width: 250px) {
+    .input {
+        min-width: 90px;
+        font-size: 1.4rem;
+        width: 80%;
+        /* padding: 10px; */
+    }
+    
+    .btnSearch {
+        padding: 3px 8px;
+    }
+
+    .form {
+        position: absolute;
+        /* top: 55px; */
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        /* margin: 0 auto; */
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+    .input {
+        min-width: 90px;
+        font-size: 1.4rem;
+        width: 86%;
+        /* padding: 10px; */
+    }
+
+    .btnSearch {
+        padding: 3px 8px;
+        width: 14%;
+    }
+    .form {
+        position: absolute;
+        /* top: 55px;
+         */
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        /* margin: 0 auto; */
+    }
+    
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    /* .form {
+        width: 100%;
+    } */
+    /* .input {
+        min-width: 70px;
+    } */
+        .input {
+            min-width: 90px;
+            /* font-size: 1.4rem; */
+            width: 89%;
+            /* padding: 10px; */
+        }
+
+        .btnSearch {
+            width: 10%;
+        }
+    
+        /* .btnSearch { 
+            padding: 3px 8px;
+        } */
+    
+        .form {
+            position: absolute;
+            /* top: 75px;
+             */
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            /* margin: 0 auto; */
+        }
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .input {
+        min-width: 200px;
+        height: 30px;
+    }
+
+    .btnSearch {
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {}

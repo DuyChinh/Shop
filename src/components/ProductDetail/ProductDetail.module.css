@@ -1,0 +1,379 @@
+.productContainer {
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.productImg {
+    width: calc(40% - 15px);
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.productInfo {
+    width: calc(60% - 15px);
+}
+
+.price {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    /* background-color: #A6FFCB; */
+}
+
+.bonus {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: white;
+    background: #EB3349;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.productSale {
+    display: flex;
+    align-items: center;
+}
+
+.sale {
+    display: flex;
+    align-items: center;
+}
+
+.productSale p {
+    margin-left: 20px;
+    color: #EB3349;
+    background: #eb33481a;
+    padding: 2px 8px;
+}
+
+.productSale sup {
+    color: #FF512F;
+}
+
+.transport {
+    padding: 0px 25px;
+    /* height: 30px; */
+    /* line-height: 30px; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.transportAddress {
+    gap: 20px
+}
+
+.transport p {
+    margin-top: 14px;
+    
+}
+
+.btnAddToCart {
+    /* margin-top: 15px; */
+    /* margin-left: 25px; */
+    text-align: center;
+    color: #fff;
+    background: #EB3349;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.btnBuy {
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+    background: #FF512F;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.productInfo .title {
+    font-size: 2rem;
+}
+
+.price p:nth-child(2) {
+    font-size: 2.7rem;
+}
+
+.btnAction {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 250px) {
+    .productContainer {
+        width: 95%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .productImg {
+       width: 100%;
+    }
+
+    .productInfo {
+       width: 100%;
+    }
+
+    .productInfo .title {
+        font-size: 1.5rem;
+    }
+
+    /* .price p {
+        font-size: 1.6rem;
+    } */
+
+    .productSale {
+        font-size: 1.4rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .productSale p:nth-child(1) {
+        margin-left: 0;
+        padding-left:  0;
+    }
+
+    .productSale p {
+        margin-left: 5px;
+    }
+
+    .sale {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        /* gap: 5px; */
+        flex-wrap: wrap;
+    }
+
+    .transport {
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .btnAddToCart {
+        margin-left: 0;
+    }
+
+    .btnAddToCart, .btnBuy {
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .price {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .price p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .price p:nth-child(2){
+        /* flex-wrap: wrap;
+         */
+         font-size: 1.5rem;
+    }
+
+    .bonus {
+        font-size: 1.3rem;
+    }
+
+    .btnAction {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+    .productContainer {
+        width: 95%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .productImg {
+       width: 100%;
+    }
+
+    .productInfo {
+       width: 100%;
+    }
+
+    .productInfo .title {
+        font-size: 1.5rem;
+    }
+
+    /* .price p {
+        font-size: 1.6rem;
+    } */
+
+    .productSale {
+        font-size: 1.4rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .productSale p:nth-child(1) {
+        margin-left: 0;
+        padding-left:  0;
+    }
+
+    .productSale p {
+        margin-left: 5px;
+    }
+
+    .sale {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        /* gap: 5px; */
+        flex-wrap: wrap;
+    }
+
+    .transport {
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .btnAddToCart {
+        margin-left: 0;
+    }
+
+    .btnAddToCart, .btnBuy {
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .price {
+        padding: 0;
+    }
+
+    .price p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .price p:nth-child(2){
+        /* flex-wrap: wrap;
+         */
+         font-size: 1.5rem;
+    }
+
+    .bonus {
+        font-size: 1.3rem;
+    }
+
+    .btnAction {
+        width: 80%;
+    }
+}
+ 
+@media screen and (min-width: 420px) and (max-width: 576px) {
+.productContainer {
+        width: 95%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .productImg {
+        width: 100%;
+    }
+
+    .productInfo {
+        width: 100%;
+    }
+
+    .productInfo .title {
+        font-size: 2rem;
+    }
+
+    /* .price p {
+        font-size: 1.6rem;
+    } */
+
+    .productSale {
+        /* font-size: 1.4rem; */
+        /* flex-wrap: wrap; */
+    }
+
+    .productSale p:nth-child(1) {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .productSale p {
+        margin-left: 5px;
+    }
+
+    .sale {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        /* gap: 5px; */
+        flex-wrap: wrap;
+    }
+
+    .transport {
+        padding: 0;
+        /* font-size: 1.4rem; */
+    }
+
+    .btnAddToCart {
+        margin-left: 0;
+    }
+
+    .btnAddToCart,
+    .btnBuy {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        /* font-size: 1.4rem; */
+    }
+
+    .price {
+        padding: 0;
+    }
+
+    .btnAction {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .productContainer {
+        align-items: flex-start;
+    }
+    .productImg {
+        object-fit: contain;
+    }
+
+    .btnAction {
+        width: 90%;
+    }
+
+    .productSale p:nth-child(1) {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .productSale p {
+        text-align: center;
+    }
+        
+    .transport, .price {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+  
+}

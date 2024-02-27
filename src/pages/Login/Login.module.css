@@ -1,0 +1,174 @@
+.row {
+    padding: 20px 0;
+    background: #93F9B9;
+}
+
+.container {
+    margin-top: 10px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #FF8008;
+    display: flex;
+    align-items: center;
+}
+
+.titleLogin {
+    font-size: 3.5rem;
+    color: var(--color-red);
+}
+
+.login {
+    padding: 20px 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: red; */
+    
+    background: url("./img/bgLogin.jpg");;
+}
+
+.form {
+    background: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30%;
+    padding: 35px 0;
+    border-radius: 10px;
+    /* width: 300px;
+    height: 300px; */
+}
+
+.form input {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.form button {
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.form .media {
+    margin: 0 auto;
+    /* width: 100%; */
+}
+
+.form input, .form button, .media {
+    width:80%;
+}
+
+.media button {
+    /* width: 40%; */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btnLogin {
+    /* font-size: 1rem; */
+    background: #4CB8C4;
+    color: #fff;
+    padding:7px 0;
+}
+
+.btnMedia {
+    background: #AA076B;
+    padding: 5px;
+    color: #fff;
+}
+
+
+.media {
+    gap: 20px;
+}
+
+@media screen and (max-width: 250px) {
+    .row {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+    .form {
+        width: 90%;
+    }
+
+    .media {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+    .row {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .media {
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .row {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .media {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .form {
+        width: 80%;
+    }
+
+    .media {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    .form {
+        width: 60%;
+    }
+
+    .media {
+        gap: 20px;
+    }
+}

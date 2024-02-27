@@ -1,0 +1,205 @@
+.location {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 500px;
+    /* width: 40%; */
+    height: 500px;
+    padding: 30px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px #41b6e6;
+    z-index: 201;
+    border-radius: 5px;
+    overflow: auto;
+    color: #333;
+}
+
+.locationAction {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+}
+
+
+.locationInput {
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    /* margin-top: 5rem; */
+    width: 70%;
+    padding: 10px;
+    height: 100%;
+}
+
+.btnUse {
+    border-radius: 3px;
+    font-size: 1.5rem;
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    background: orangered;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.suggestionList {
+    box-shadow: 0 0 10px #ccc;
+    height: 100px;
+    overflow: auto;
+}
+
+.suggestionItem {
+    width: 100%;
+    padding: 10px;
+}
+
+.suggestionItem.active {
+    background: #41b6e6;
+    color: #fff;
+}
+
+.suggestionItem:hover {
+    background: #41b6e6;
+    color: #fff;
+}
+
+.deleteAll {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    color: red;
+    font-size: 1.8rem;
+}
+
+
+.toggle {
+    position: fixed;
+    inset: 0;
+    background: #333;
+    opacity: 0.7;
+    z-index: 200;
+}
+
+.headerLocation {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exit {
+    cursor: pointer;
+}
+
+.addressItem {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 200px) {
+    .location {
+        width: 95%;
+        padding: 10px;
+    }
+
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .btnUse {
+        font-size: 1rem;
+    }
+
+    /* .deleteAll {
+        right: 22%;
+    } */
+}
+
+@media screen and (min-width: 200px) and (max-width: 421px) {
+    .location {
+        width: 95%;
+        padding: 10px;
+    }
+
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .btnUse {
+        font-size: 1rem;
+    }
+
+    /* .deleteAll {
+        right: 22%;
+    } */
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .location {
+            width: 95%;
+            padding: 10px;
+        }
+    
+    
+        .locationInput {
+            font-size: 1.4rem;
+        }
+    
+        .btnUse {
+            font-size: 1rem;
+        }
+    
+        /* .deleteAll {
+            right: 22%;
+        } */
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .location {
+        width: 95%;
+        padding: 30px;
+    }
+
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .btnUse {
+        font-size: 1rem;
+    }
+
+    .deleteAll {
+        right: 30%;
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    .location {
+        width: 70%;
+        padding: 30px;
+    }
+
+
+    /* .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .btnUse {
+        font-size: 1rem;
+    } */
+
+    .deleteAll {
+        right: 30%;
+    }
+}
+

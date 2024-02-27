@@ -1,0 +1,158 @@
+.formAdd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 500px;
+    /* width: 40%; */
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px #41b6e6;
+    z-index: 201;
+    border-radius: 5px;
+}
+
+.formAdd input {
+    padding: 7px 10px;
+}
+
+.formAdd textarea {
+    padding: 7px 10px;
+}
+
+.formAdd input, textarea {
+    /* outline: 1px solid #41b6e6; */
+}
+
+.formAdd button {
+    background: #41b6e6;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 3px;
+}
+
+.locationAction {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+}
+
+
+.locationInput {
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+
+.suggestionList {
+    /* display: none; */
+    /* width: 100%; */
+    box-shadow: 0 0 10px #ccc;
+    height: 100px;
+    overflow: auto;
+}
+
+.suggestionItem {
+    width: 100%;
+    padding: 10px;
+
+}
+
+.suggestionItem.active {
+    background: #41b6e6;
+    color: #fff;
+}
+
+.suggestionItem:hover {
+    background: #41b6e6;
+    color: #fff;
+}
+
+@media screen and (max-width: 200px) {
+    .formAdd {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .infoUser {
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .btnUse {
+        font-size: 1rem;
+    }
+
+    /* .deleteAll {
+        right: 22%;
+    } */
+}
+
+@media screen and (min-width: 200px) and (max-width: 421px) {
+    .formAdd {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .infoUser {
+        flex-direction: column;
+        font-size: 1.4rem;
+        
+    }
+
+    .infoUser input {
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid #ccc;
+    }
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .formAdd button {
+        font-size: 1.4rem;
+    }
+
+    /* .deleteAll {
+        right: 22%;
+    } */
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .formAdd {
+        width: 95%;
+        padding: 10px;
+    }
+
+
+    .locationInput {
+        font-size: 1.4rem;
+    }
+
+    .infoUser input {
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid #ccc;
+    }
+
+    .formAdd button {
+        font-size: 1.4rem;
+    }
+
+    
+
+    /* .deleteAll {
+            right: 22%;
+        } */
+}

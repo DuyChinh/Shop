@@ -1,0 +1,197 @@
+.action {
+    /* background: red; */
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.actionContainer {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    /* color: #fff; */
+}
+
+.auth {
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.notice {
+    display: flex;
+    /* align-items: center; */
+    gap: 3px;
+    color: var(--btn-color-text);
+    margin-right: 8px;
+}
+
+.help {
+    margin-right: 8px;
+    color: var(--btn-color-text);
+    display: flex;
+    /* align-items: center; */
+    gap: 3px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.row {
+    padding: 30px 0;
+    /* background: linear-gradient(rgb(240, 152, 25), rgb(237, 222, 93)); */
+    background: linear-gradient(rgb(26, 41, 128), rgb(38, 208, 206));
+}
+
+
+.container {
+    margin-top: 20px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #FF8008;
+    display: flex;
+    align-items: center;
+}
+
+.cart {
+    position: relative;
+}
+
+.amountCart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: #FF512F;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.cartBtn {
+    font-size: 3.7rem;
+    cursor: pointer;
+    color: #000;
+}
+
+
+@media screen and (max-width: 200px) {
+
+    .language {
+        display: none;
+    }
+
+    .row {
+        /* margin-top: 20px; */
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .searchBar {}
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .cartBtn {
+        font-size: 3.2rem;
+    }
+
+    .actionContact a {
+        display: none;
+    }
+
+    .notice span,
+    .help span,
+    .language span {
+        display: none;
+    }
+
+    .actionContactP {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (min-width: 200px) and (max-width: 420px) {
+    .row {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    
+    .searchBar {
+      
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .cartBtn {
+        font-size: 3.8rem;
+    }
+
+    .notice span, .help span, .language span {
+        display: none;
+    }
+
+    .actionContactP {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .row {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .notice span,
+    .help span,
+    .language span {
+        display: none;
+    }
+
+    .actionContactP {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .notice span,
+    .help span,
+    .language span {
+        display: none;
+    }
+    
+    .actionContactP {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    
+}

@@ -1,0 +1,77 @@
+.toggle {
+    position: fixed;
+    inset: 0;
+    background: #333;
+    opacity: 0.8;
+    z-index: 101;
+}
+
+.containerOrder {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    margin: 0 auto;
+    z-index: 102;
+    background: #fff;
+    padding: 10px;
+    color: #333;
+}
+
+.addressRecieve {
+    /* z-index: 101; */
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+    box-shadow: 0 0 5px #ccc;
+    background: #fff;
+}
+
+.infoUser {
+    /* color: #333; */
+}
+
+.pay {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.8rem;
+    box-shadow: 0 0 5px #ccc;
+    background: #fff;
+}
+
+
+.btnOrder {
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    background: #ee4d2d;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+
+.btnOk {
+    display: block;
+    margin: 0 auto;
+    background: blue;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 200px) {
+    .containerOrder {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 420px) {
+     .containerOrder {
+        font-size: 1.5rem;
+     }
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {}
